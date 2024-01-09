@@ -15,7 +15,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: "https://github.com/dr-msr/dr-msr/blob/aee84d79b798715472455cee7fc271b49bfb30d6/.github/workflows/3d-setting.json"
+          SETTING_JSON: "https://raw.githubusercontent.com/dr-msr/dr-msr/aee84d79b798715472455cee7fc271b49bfb30d6/.github/workflows/3d-setting.json"
       - name: Commit & Push
         run: |
           git config user.name github-actions
